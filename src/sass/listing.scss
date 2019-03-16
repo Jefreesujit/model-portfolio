@@ -1,0 +1,156 @@
+.portfolio-listing-section {
+
+    .listing-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        box-shadow: 0px 2px 6px 0px grey;
+        border-bottom: 5px solid orange;
+
+        .logo-img {
+            height: 40px;
+            width: 200px;
+        }
+
+        .action-section span {
+            font-weight: bold;
+            margin: 5px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+    }
+
+    .portfolio-main-section {
+        text-align: center;
+        margin: 50px auto;
+        max-width: 1440px;
+
+        .description {
+            font-size: 18px;
+            padding: 5px;
+            font-weight: 500;
+        }
+
+        .message {
+            font-size: 14px;
+            padding: 5px;
+            font-weight: normal;
+        }
+
+        .filter-section {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0 60px;
+            flex-wrap: wrap;
+
+            .filter-field {
+                select {
+                    width: 300px;
+                    border: none;
+                    border-bottom: 1px solid lightgray;
+                    outline: none;
+                    padding: 5px 5px;
+                    margin: 0 20px;
+                }
+
+                label {
+                    margin-right: 40px;
+                }
+            }
+        }
+
+        .listing-section {
+            padding-top: 5%;
+            border-top: 1px solid #ebebeb;
+        }
+
+        .listing-title {
+            display: flex;
+
+            .title-tab {
+                flex: 1;
+                background: $listing-tab-color;
+                padding: 10px;
+                line-height: 20px;
+                margin: 0 1px;
+                border-bottom: 5px solid $listing-tab-color;
+                font-weight: 500;
+                cursor: pointer;
+
+                &.active {
+                    border-bottom-color: orange;
+                }
+            }
+        }
+
+        .portfolio-preference-list {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    .portfolio-item {
+        width: 400px;
+        margin: 10px 30px;
+
+        .item-head {
+            position: relative;
+        }
+
+        .folio-item-image {
+            width: 400px;
+            height: 220px;
+        }
+
+        .folio-item-title {
+            position: absolute;
+            top: 170px;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 400px;
+            height: 50px;
+            color: white;
+            font-size: 18px;
+            line-height: 50px;
+            text-transform: uppercase;
+            text-align: left;
+
+            span {
+                margin-left: 20px;
+            }
+        }
+
+        .item-record {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 10px;
+            border: 1px solid lightgrey;
+            border-bottom: none;
+
+            .currency {
+                text-transform: uppercase;
+                font-size: 12px;
+                padding-right: 5px;
+            }
+        }
+
+        .item-action {
+            background-color: #bb3a3a;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .portfolio-main-section {
+        .portfolio-item, .portfolio-preference-list {
+            margin: 15px auto;
+        }
+
+        .filter-field {
+            margin-top: 30px;
+        }
+    }
+}
