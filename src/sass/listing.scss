@@ -144,13 +144,15 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .portfolio-main-section {
-        .portfolio-item, .portfolio-preference-list {
-            margin: 15px auto;
-        }
+    .portfolio-listing-section {
+        .portfolio-main-section {
+            .portfolio-item, .portfolio-preference-list {
+                margin: 15px auto;
+            }
 
-        .filter-field {
-            margin-top: 30px;
+            .filter-field {
+                margin-top: 30px;
+            }
         }
     }
 }
