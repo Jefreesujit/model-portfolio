@@ -21,7 +21,7 @@ module.exports = env => {
       inject: 'body'
     }));
     plugins.push(new WebpackCleanupPlugin({
-      exclude: ['images/**/*', 'fonts/**/*', 'css/**/*', '**/*.html']
+      exclude: ['images/**/*', 'fonts/**/*', '*.css', '*.html']
     }));
 
   return {
