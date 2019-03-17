@@ -47,12 +47,22 @@
             }
         }
 
-        .column-value, .content-value  {
+        .column-value, .content-value {
             font-size: 14px;
             font-weight: bold;
 
             &.link {
                 font-weight: normal;
+            }
+
+            .icon {
+                padding: 0px 3px;
+                background: red;
+                border-radius: 10px;
+                color: white;
+                font-size: 11px;
+                font-weight: bold;
+                margin: 5px;
             }
         }
 
